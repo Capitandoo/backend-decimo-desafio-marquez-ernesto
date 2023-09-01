@@ -113,7 +113,7 @@ components:
       properties: 
         _id:
           type: string
-          description: Id autogenerado por Mongo del producto.
+          description: Id autogenerado por MongoDb del producto.
         title:
           type: string
           description: Titulo del producto.
@@ -142,16 +142,16 @@ components:
           type: string
           description: ObjectId del usuario creador del producto.
       example: 
-        _id: ObjectId("dawjkldsa.23ndasljid21da")
-        title: Remera Polo
-        description: Remera de algodon muy buena calidad
+        _id: ObjectId("64bfc47a329120e07ce7d36")
+        title: Crema Antiage
+        description: Loreal con microesferas
         price: 1000
-        thumbnail: 01-remera.jpg
-        code: RE00001
+        thumbnail: LorealAntieage.jpg
+        code: c00001
         stock: 15
-        category: Remera
+        category: cremas
         status: true
-        owner: admin
+        owner: ObjectId("64e4b0393389cdc4c97cbf65")
         
   requestBodies:
     addProduct:
@@ -188,5 +188,5 @@ components:
         price: 1000
         status: 'true'
         stock: 15
-        category: Libros
+        category: cremas
         thumbnail: linkDeEjemplo
